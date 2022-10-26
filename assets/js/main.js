@@ -88,8 +88,8 @@ window.addEventListener('scroll', scrollUp)
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2500,
-    delay: 400,
+    duration: 2000,
+    delay: 100,
     // reset: true
 })
 
@@ -97,3 +97,39 @@ sr.reveal(`.home-swiper, .new-swiper, .newsletter__container`)
 sr.reveal(`.category__data, .trick__content, .footer__content`,{interval: 100})
 sr.reveal(`.about__data, .discount__img`,{origin: 'left'})
 sr.reveal(`.about__img, .discount__data`,{origin: 'right'})
+
+/*=============== PARALLAX ANIMATION ===============*/
+
+let bg = document.getElementById('bg');
+let moon = document.getElementById('moon');
+let mountain = document.getElementById('mountain');
+let road = document.getElementById('road');
+let text = document.getElementById('text');
+
+window.addEventListener('scroll', function(){
+    var value = window.scrollY;
+
+    bg.style.top = value * 0.5 + 'px'; 
+    moon.style.left = value * 0.5 + 'px'; 
+    moon.style.top = value * 0.15 + 'px'; 
+    road.style.top = value * 0.15 + 'px'; 
+    text.style.top = value * 1 + 'px'; 
+
+
+});
+
+let flashLight = $('#flashlight');
+
+function handleMouseMove(e) {
+    let parentOffset = flashLight.parent().offset(); 
+    let cursorX = (e.type === "touchmove" && e.changedTouches ? e.changedTouches[0].clientX : e.clientX) - parentOffset.left;
+    let cursorY = (e.type === "touchmove" && e.changedTouches ? e.changedTouches[0].clientY : e.clientY) - parentOffset.top;
+    TweenMax.set(flashLight, {background:`radial-gradient(circle at ${cursorX}px ${cursorY}px, transparent 0, rgba(0,0,0,0.3) 2vw, rgba(0,0,0,0.5) 3vw, rgba(0,0,0,0.7) 4vw, rgba(0,0,0,0.85) 7vw, rgba(0,0,0,0.95) 15vw )`}); 
+}
+
+
+$(function() {
+  TweenMax.to(flashLight, 3, {opacity: 1});
+  document.addEventListener("mousemove", handleMouseMove);
+  document.addEventListener("touchmove", handleMouseMove);
+})
