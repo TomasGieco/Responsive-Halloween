@@ -248,18 +248,7 @@ button{
 
 /* Active link */
 .active-link{
-    position: relative;
-}
-
-.active-link::before{
-    content: '';
-    position: absolute;
-    bottom: -.75rem;
-    left: 45%;
-    width: 5px;
-    height: 5px;
-    background-color: var(--title-color);
-    border-radius: 50%;
+    color: var(--first-color) !important;
 }
 
 /*=============== HOME ===============*/
