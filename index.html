@@ -1,399 +1,661 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
 
-        <!-- ==================== FAVICON ====================  -->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gieco Tomás Portfolio</title>
+    <!-- ==================== Unicons ==================== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-        <!-- ==================== BOXICONS ====================  -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- ==================== SWIPER CSS ==================== -->
+    <link rel="stylesheet" href="">
 
-        <!-- ==================== SWIPER CSS ====================  -->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- ==================== CSS ==================== -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-        <!-- ==================== CSS ====================  -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+</head>
 
-        
-        
-        <title>Responsive Halloween Website</title>
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Tomás</a>
 
-    </head>
-    <body>
-        <!-- ==================== HEADER ====================  -->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    <img src="assets/img/logo.png" alt="" class="nav__logo-img">
-                    Halloween
-                </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-home nav__icon"></i> Home
+                        </a>
+                    </li>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#trick" class="nav__link">Candy</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#new" class="nav__link">New</a>
-                        </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
 
-                        <a href="#" class="button button--ghost">Support</a>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file nav__icon"></i> Skills
+                        </a>
+                    </li>
 
-                    </ul>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contact Me
+                        </a>
+                    </li>
 
-                    <div class="nav__close" id="nav-close">
-                        <i class='bx bx-x'></i>
-                    </div>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </ul>
+            </div>
 
-                    <img src="assets/img/nav-img.png" alt="" class="nav__img">
-
-                </div>
+            <div class="nav__btns">
+                <!-- Theme Change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
 
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
+                    <i class="uil uil-apps"></i>
                 </div>
+            </div>
+        </nav>
+    </header>
 
-            </nav>
-        </header>
-
-        <main class="main">
-            <!-- ==================== HOME ====================  -->
-            <section class="home container" id="home">
-                <div class="swiper home-swiper">
-                    <div class="swiper-wrapper">
-                        <!-- HOME SLIDER 1 -->
-                        <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="assets/img/home1-img.png" alt="" class="home__img">
-                                    <div class="home__indicator"></div>
-    
-                                    <div class="home__details-img">
-                                        <h4 class="home__details-title">The Labu “Reiza”</h4>
-                                        <span class="home__details-subtitle">The Living Pumpkin</span>
-                                    </div>
-                                </div>
-    
-                                <div class="home__data">
-                                    <h3 class="home__subtitle">#1 Top Scariest Ghost</h3>
-                                    <h1 class="home__title">UOOOO <br> TRICK OR <br> TREAT!!</h1>
-                                    <p class="home__description">Hi, I'm Reiza, people call me "El Labu". I am currently trying to learn 
-                                        something new, building my own bike with parts made only in Malaysia.
-                                    </p>
-
-                                    <div class="home__buttons">
-                                        <a href="#" class="button">Book Now</a>
-                                        <a href="#" class="button--link button--flex">Track Record <i class='bx bx-right-arrow-alt button__icon'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!-- HOME SLIDER 2 -->
-                        <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="assets/img/home2-img.png" alt="" class="home__img">
-                                    <div class="home__indicator"></div>
-    
-                                    <div class="home__details-img">
-                                        <h4 class="home__details-title">Adino & Grahami</h4>
-                                        <span class="home__details-subtitle">No words can describe them</span>
-                                    </div>
-                                </div>
-    
-                                <div class="home__data">
-                                    <h3 class="home__subtitle">#2 top Best duo</h3>
-                                    <h1 class="home__title">BRING BACK <br> MY COTTON <br> CANDY</h1>
-                                    <p class="home__description">Adino steals cotton candy from his brother and eats them all in one bite, 
-                                        a hungry beast. Grahami can no longer contain his anger towards Adino.
-                                    </p>
-
-                                    <div class="home__buttons">
-                                        <a href="#" class="button">Book Now</a>
-                                        <a href="#" class="button--link button--flex">Track Record <i class='bx bx-right-arrow-alt button__icon'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!-- HOME SLIDER 3 -->
-                        <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="assets/img/home3-img.png" alt="" class="home__img">
-                                    <div class="home__indicator"></div>
-    
-                                    <div class="home__details-img">
-                                        <h4 class="home__details-title">Captain Sem</h4>
-                                        <span class="home__details-subtitle">Veteran Spooky Ghost</span>
-                                    </div>
-                                </div>
-    
-                                <div class="home__data">
-                                    <h3 class="home__subtitle">#3 Top Scariest  Ghost</h3>
-                                    <h1 class="home__title">RESPAWN <br> THE SPOOKY <br> SKULL</h1>
-                                    <p class="home__description">In search for cute little puppy, Captain Sem has come back from his tragic death. 
-                                        With his hogwarts certified power he promise to be a hero for all of ghostkind.
-                                    </p>
-
-                                    <div class="home__buttons">
-                                        <a href="#" class="button">Book Now</a>
-                                        <a href="#" class="button--link button--flex">Track Record <i class='bx bx-right-arrow-alt button__icon'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-
-                </div>
-
-            </section>
-
-            <!-- ==================== CATEGORY ====================  -->
-            <section class="section category">
-                <h2 class="section__title">Favorite Scare <br> Category</h2>
-
-                <div class="category__container container grid">
-                    <div class="category__data">
-                        <img src="assets/img/category1-img.png" alt="" class="category__img">
-                        <h3 class="category__title">Ghosts</h3>
-                        <p class="category__description">Choose the ghosts, the scariest there are.</p>
+    <!--==================== BACKGROUND ====================-->
+    <div class="background"></div>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/tom%C3%A1s-agust%C3%ADn-gieco-a615a0217/" target="_blank"
+                            class="home__social-icon">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        
+                        <a href="https://github.com/TomasGieco" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github"></i>
+                        </a>
                     </div>
 
-                    <div class="category__data">
-                        <img src="assets/img/category2-img.png" alt="" class="category__img">
-                        <h3 class="category__title">Pumpkins</h3>
-                        <p class="category__description">You look at the scariest pumpkins there is.</p>
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0" mask-type="alpha">
+                                <path
+                                    d="M40.6,-56.8C53.8,-46.3,66.4,-36,72.1,-22.5C77.8,-9,76.5,7.7,69.7,20.8C62.9,33.8,50.6,43.3,38,55C25.5,66.6,12.8,80.6,0.1,80.5C-12.6,80.4,-25.2,66.3,-38.8,54.9C-52.4,43.6,-66.9,35,-72.9,22.3C-79,9.6,-76.6,-7.3,-70.7,-22.2C-64.8,-37.1,-55.3,-50.1,-43,-60.9C-30.6,-71.6,-15.3,-80,-0.8,-79C13.7,-77.9,27.4,-67.3,40.6,-56.8Z"
+                                    transform="translate(100 100)" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path
+                                    d="M40.6,-56.8C53.8,-46.3,66.4,-36,72.1,-22.5C77.8,-9,76.5,7.7,69.7,20.8C62.9,33.8,50.6,43.3,38,55C25.5,66.6,12.8,80.6,0.1,80.5C-12.6,80.4,-25.2,66.3,-38.8,54.9C-52.4,43.6,-66.9,35,-72.9,22.3C-79,9.6,-76.6,-7.3,-70.7,-22.2C-64.8,-37.1,-55.3,-50.1,-43,-60.9C-30.6,-71.6,-15.3,-80,-0.8,-79C13.7,-77.9,27.4,-67.3,40.6,-56.8Z"
+                                    transform="translate(100 100)" />
+                                <image class="home__blob-img" x="10" y="20" href="./assets/img/perfil.png">
+                            </g>
+
+                        </svg>
                     </div>
 
-                    <div class="category__data">
-                        <img src="assets/img/category3-img.png" alt="" class="category__img">
-                        <h3 class="category__title">Witch Hat</h3>
-                        <p class="category__description">Pick the most stylish witch hats out there.</p>
-                    </div>
-                </div>
-            </section>
+                    <div class="home__data">
 
-            <!-- ==================== ABOUT ====================  -->
-            <section class="section about" id="about">
-                <div class="about__container container grid">
-                    <div class="about__data">
-                        <h2 class="section__title about__title">About Halloween <br> Night</h2>
-                        <p class="about__description">Night of all the saints, or all the dead, is celebrated on October 31 and it is a 
-                            very fun international celebration, this celebration comes from ancient origins, and is already 
-                            celebrated by everyone.
+                        <h1 class="home__title">Hi, I'm Tomás</h1>
+                        <h3 class="home__subtitle">Frontend Developer</h3>
+                        <p class="home__description">
+                            Welcome to my presentation!!
                         </p>
-                        <a href="#" class="button">Know more!</a>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down"></i>
+                    </a>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
+
+            <div class="about__container container grid">
+                <img src="./assets/img/about.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description">
+                        I'm a student at the National Technological University (UTN). I'm currently studying C++,
+                        JavaScript, HTML, CSS, mostly looking for development in the Frontend field. It is nice to be
+                        able to carry out group projects in which I can demonstrate and develop
+                        both my level as a programmer and my ability to work with different developers.
+                    </p>
+
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">01+</span>
+                            <span class="about__info-name">Years<br>Experience</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">4+</span>
+                            <span class="about__info-name">Completed<br>Proyects</span>
+                        </div>
+
                     </div>
 
-                    <img src="assets/img/about-img.png" alt="" class="about__img">
+                    <div class="about__buttons">
+                        <a href="assets/cv/CV - Gieco Tomás.pdf" download class="button button--flex">
+                            Download CV<i class="uil uil-file-download button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technologies</span>
+
+            <div class="skills__container container grid">
+                <div>
+                    <ul>
+                        <!--==================== SKILLS 1 ====================-->
+                        <li>
+                            <div class="skills__content skills__open">
+                                <div class="skills__header">
+                                    <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                    <div>
+                                        <h1 class="skills__title">Lenguages</h1>
+                                    </div>
+
+                                    <i class="uil uil-angle-down skills__arrow"></i>
+                                </div>
+                                <div class="skills__list grid">
+                                    <ul class="skills__dropdown">
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">JavaScript</h3>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">PHP</h3>
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">C++</h3>
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">Python</h3>
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">HTML5</h3>
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">CSS3</h3>
+
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!--==================== SKILLS 2 ====================-->
+                        <li>
+                            <div class="skills__content skills__close">
+                                <div class="skills__header">
+                                    <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                    <div>
+                                        <h1 class="skills__title">FullStack Developer</h1>
+                                    </div>
+
+                                    <i class="uil uil-angle-down skills__arrow"></i>
+                                </div>
+
+                                <div class="skills__list grid">
+                                    <ul class="skills__dropdown">
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">React</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">Redux</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">Ant</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">Node.JS</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">Express.JS</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!--==================== SKILLS 3 ====================-->
+                        <li>
+                            <div class="skills__content skills__close">
+                                <div class="skills__header">
+                                    <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                    <div>
+                                        <h1 class="skills__title">Data Base</h1>
+                                    </div>
+
+                                    <i class="uil uil-angle-down skills__arrow"></i>
+                                </div>
+
+                                <div class="skills__list grid">
+                                    <ul class="skills__dropdown">
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">SQL</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">PostgreSQL</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">MySQL</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">Sequelize</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!--==================== SKILLS 4 ====================-->
+                        <li>
+                            <div class="skills__content skills__close">
+                                <div class="skills__header">
+                                    <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                    <div>
+                                        <h1 class="skills__title">Others</h1>
+                                    </div>
+
+                                    <i class="uil uil-angle-down skills__arrow"></i>
+                                </div>
+
+                                <div class="skills__list grid">
+                                    <ul class="skills__dropdown">
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">Git</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">Github</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="skills__data">
+                                                <div class="skills__titles">
+                                                    <h3 class="skills__name">Figma</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My personal journey just begins!</span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active qualification__color"
+                            data-target="#education">
+                            <i class="uil uil-graduation-cap qualification__icon"></i> Education
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i> Proyects
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!--==================== QUALIFICATION CONTENT 1====================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--==================== QUALIFICATION 1====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title"> Programming Course: Web Developer - JavaScript,
+                                        HTML, CSS.</h3>
+                                    <span class="qualification__subtitle">Online Course - Udemy</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2021 - 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 2====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Master on JavaScript: Learn JS, jQuery, Angular,
+                                        NodeJS
+                                    </h3>
+                                    <span class="qualification__subtitle">Online Course - Udemy</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2021 - 2022
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--==================== QUALIFICATION 3====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Higher Technical degree in Programming </h3>
+                                    <span class="qualification__subtitle">Argentina - UTN</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2021 - On course
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                            </div>
+                            <!--==================== QUALIFICATION 4====================-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title"> Programming Course: Full Stack Developer</h3>
+                                    <span class="qualification__subtitle">Online Course - Henry</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2021 - 2022
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION CONTENT 2====================-->
+                        <div class="qualification__content" data-content id="work">
+                            <!--==================== QUALIFICATION 1====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">
+                                        <a href="https://github.com/TomasGieco/Fan-Page-Friends" target="_blank">Page -
+                                            Friends</a>
+                                        <i class="uil uil-arrow-left"></i>
+                                    </h3>
+                                    <span class="qualification__subtitle">HTML - CSS</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2018
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 2====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">
+                                        <a href="https://github.com/TomasGieco/Form-with-CSS" target="_blank">Form</a>
+                                        <i class="uil uil-arrow-left"></i>
+                                    </h3>
+                                    <span class="qualification__subtitle">HTML - CSS - JS</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2021
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!--==================== QUALIFICATION 3====================-->
+                            <div class="qualification__data">
+
+                                <div>
+                                    <h3 class="qualification__title">
+                                        <a href="https://github.com/TomasGieco/Calculadora"
+                                            target="_blank">Calculator</a>
+                                        <i class="uil uil-arrow-left"></i>
+                                    </h3>
+                                    <span class="qualification__subtitle">HTML - CSS - JS</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2021
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                            </div>
+                            <!--==================== QUALIFICATION 4====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">
+                                        <a href="https://github.com/TomasGieco/JUEGO-DADOS-20" target="_blank">Dice
+                                            Game</a>
+                                        <i class="uil uil-arrow-left"></i>
+                                    </h3>
+                                    <span class="qualification__subtitle">C++</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2021
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </section>
 
-            <!-- ==================== TRICK OR TREAT ====================  -->
-            <section class="section trick" id="trick">
-                <h2 class="section__title">Trick Or Treat</h2>
+        </section>
 
-                <div class="trick__container container grid">
-                    <div class="trick__content">
-                        <img src="assets/img/trick-treat1-img.png" alt="" class="trick__img">
-                        <h3 class="trick__title">Toffee</h3>
-                        <span class="trick__subtitle">Candy</span>
-                        <span class="trick__price">$11.99</span>
-                        <button class="button trick__button">
-                            <i class='bx bx-cart-alt trick__icon'></i>
-                        </button>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Call me</h3>
+                            <span class="contact__subtitle">+54 11-69317674</span>
+
+                        </div>
                     </div>
 
-                    <div class="trick__content">
-                        <img src="assets/img/trick-treat2-img.png" alt="" class="trick__img">
-                        <h3 class="trick__title">Bone</h3>
-                        <span class="trick__subtitle">Accessory</span>
-                        <span class="trick__price">$8.99</span>
-                        <button class="button trick__button">
-                            <i class='bx bx-cart-alt trick__icon'></i>
-                        </button>
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">tomas.gieco@hotmail.com</span>
+
+                        </div>
                     </div>
 
-                    <div class="trick__content">
-                        <img src="assets/img/trick-treat3-img.png" alt="" class="trick__img">
-                        <h3 class="trick__title">Scarecrow</h3>
-                        <span class="trick__subtitle">Accessory</span>
-                        <span class="trick__price">$15.99</span>
-                        <button class="button trick__button">
-                            <i class='bx bx-cart-alt trick__icon'></i>
-                        </button>
-                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-user-location  contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Argentina - Buenos Aires Pilar</span>
 
-                    <div class="trick__content">
-                        <img src="assets/img/trick-treat4-img.png" alt="" class="trick__img">
-                        <h3 class="trick__title">Candy Cane</h3>
-                        <span class="trick__subtitle">Candy</span>
-                        <span class="trick__price">$7.99</span>
-                        <button class="button trick__button">
-                            <i class='bx bx-cart-alt trick__icon'></i>
-                        </button>
-                    </div>
-
-                    <div class="trick__content">
-                        <img src="assets/img/trick-treat5-img.png" alt="" class="trick__img">
-                        <h3 class="trick__title">Pumpkin</h3>
-                        <span class="trick__subtitle">Candy</span>
-                        <span class="trick__price">$19.99</span>
-                        <button class="button trick__button">
-                            <i class='bx bx-cart-alt trick__icon'></i>
-                        </button>
-                    </div>
-
-                    <div class="trick__content">
-                        <img src="assets/img/trick-treat6-img.png" alt="" class="trick__img">
-                        <h3 class="trick__title">Ghost</h3>
-                        <span class="trick__subtitle">Accessory</span>
-                        <span class="trick__price">$17.99</span>
-                        <button class="button trick__button">
-                            <i class='bx bx-cart-alt trick__icon'></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ==================== DISCOUNT ====================  -->
-            <section class="section discount">
-                <div class="discount__container container grid">
-                    <div class="discount__data">
-                        <h2 class="discount__title">50% Discount <br> On New Products</h2>
-                        <a href="#" class="button">Go to new</a>
-                    </div>
-
-                    <img src="assets/img/discount-img.png" alt="" class="discount__img">
-                </div>
-            </section>
-
-            <!--==================== NEW ARRIVALS ====================-->
-            <section class="section new" id="new">
-                <h2 class="section__title">New Arrivals</h2>
-
-                <div class="new__container container">
-                    <div class="swiper new-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="new__content swiper-slide">
-                                <div class="new__tag">New</div>
-                                <img src="assets/img/new1-img.png" alt="" class="new__img">
-                                <h3 class="new__title">Haunted House</h3>
-                                <span class="new__subtitle">Accessory</span>
-                                
-                                <div class="new__prices">
-                                    <span class="new__price">$14.99</span>
-                                    <span class="new__discount">$29.99</span>
-                                </div>
-
-                                <button class="button new__button">
-                                    <i class='bx bx-cart-alt new__icon'></i>
-                                </button>
-                            </div>
-        
-                            <div class="new__content swiper-slide">
-                                <div class="new__tag">New</div>
-                                <img src="assets/img/new2-img.png" alt="" class="new__img">
-                                <h3 class="new__title">Halloween Candle</h3>
-                                <span class="new__subtitle">Accessory</span>
-        
-                                <div class="new__prices">
-                                    <span class="new__price">$11.99</span>
-                                    <span class="new__discount">$21.99</span>
-                                </div>
-
-                                <button class="button new__button">
-                                    <i class='bx bx-cart-alt new__icon'></i>
-                                </button>
-                            </div>
-        
-                            <div class="new__content swiper-slide">
-                                <div class="new__tag">New</div>
-                                <img src="assets/img/new3-img.png" alt="" class="new__img">
-                                <h3 class="new__title">Witch Hat</h3>
-                                <span class="new__subtitle">Accessory</span>
-        
-                                <div class="new__prices">
-                                    <span class="new__price">$4.99</span>
-                                    <span class="new__discount">$9.99</span>
-                                </div>
-
-                                <button class="button new__button">
-                                    <i class='bx bx-cart-alt new__icon'></i>
-                                </button>
-                            </div>
-        
-                            <div class="new__content swiper-slide">
-                                <div class="new__tag">New</div>
-                                <img src="assets/img/new4-img.png" alt="" class="new__img">
-                                <h3 class="new__title">Rip</h3>
-                                <span class="new__subtitle">Accessory</span>
-        
-                                <div class="new__prices">
-                                    <span class="new__price">$24.99</span>
-                                    <span class="new__discount">$44.99</span>
-                                </div>
-
-                                <button class="button new__button">
-                                    <i class='bx bx-cart-alt new__icon'></i>
-                                </button>
-                            </div>
-        
-                            <div class="new__content swiper-slide">
-                                <div class="new__tag">New</div>
-                                <img src="assets/img/new5-img.png" alt="" class="new__img">
-                                <h3 class="new__title">Terrifying Crystal Ball</h3>
-                                <span class="new__subtitle">Accessory</span>
-        
-                                <div class="new__prices">
-                                    <span class="new__price">$5.99</span>
-                                    <span class="new__discount">$12.99</span>
-                                </div>
-
-                                <button class="button new__button">
-                                    <i class='bx bx-cart-alt new__icon'></i>
-                                </button>
-                            </div>
-        
-                            <div class="new__content swiper-slide">
-                                <div class="new__tag">New</div>
-                                <img src="assets/img/new6-img.png" alt="" class="new__img">
-                                <h3 class="new__title">Witch Broom</h3>
-                                <span class="new__subtitle">Accessory</span>
-        
-                                <div class="new__prices">
-                                    <span class="new__price">$7.99</span>
-                                    <span class="new__discount">$14.99</span>
-                                </div>
-
-                                <button class="button new__button">
-                                    <i class='bx bx-cart-alt new__icon'></i>
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+
+                <form action="https://formspree.io/f/mayvyzzy" method="POST" class="contact__form grid" id="form">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="name" class="contact__label">Name</label>
+                            <input name="name" type="text" class="contact__input">
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="email" class="contact__label">Email</label>
+                            <input name="email" type="email" class="contact__input">
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="title" class="contact__label">Title</label>
+                        <input name="title" type="text" class="contact__input">
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="message" class="contact__label">Message</label>
+                        <textarea name="message" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div class="contact__status">
+                        <div>
+                            <button href="#" type="submit" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </button>
+                        </div>
+                        <div class="hidden"> a</div>
+                        <div id="status"></div>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+    </main>
 
 
-        </main>
-        
 
-        <!-- ==================== SWIPER JS ====================  -->
-        <script src="assets/js/swiper-bundle.min.js"></script>
 
-        <!-- ==================== MAIN JS ====================  -->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!-- ==================== SCROLL TOP ==================== -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    <!-- ==================== SWIPER JS ==================== -->
+
+    <!-- ==================== MAIN JS ==================== -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
 </html>
